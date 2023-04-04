@@ -1,31 +1,45 @@
-.App {
+:root {
+  --main_page_header_body: #fff5ee;
+  --chat_header_font_color: #F8F8F8;
+  --main_bg_color: #282c34;
+  --main_color:#9A8BAD;
+  --darker_main_color: #6330a6;
+  --half_main_bg_main: #282C34;
+  --client_bubble_color: #7a6792;
+  --server_bubble_color: #d6d9e8;
+  --server_bubble_color_lighter: #bdc6ff;
+  --app_link: #61dafb;
+  --message_container_bg_color:#f2f2f3;
+  --message_container_bg_color_darker: #e6e8eb;
+  --social_media_icon_color: #544765;
+}
+body{
+  background-color: var(--main_bg_color);
+
+}
+
+.Page-Header{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-top: 5%;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--main_page_header_body);
 }
 
+.Page-Body{
+  padding: 5vw;
+}
+
+.Page-Body p{
+  color: var(--main_page_header_body);
+}
+
+.Chat{
+  color: black;
+}
+
+/* Unused;for references */
 .App-link {
-  color: #61dafb;
+  color: var(--app_link);
 }
 
 @keyframes App-logo-spin {

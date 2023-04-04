@@ -1,0 +1,29 @@
+
+.rcw-response-meeting-info{
+    background-color: var(--server_bubble_color);
+    border-radius: 10px;
+    margin: 0;
+    padding: 15px;
+    /*width: 100%;*/
+}
+
+.attendingList {
+    margin: 1%;
+    padding: 2%;
+}
+
+.attendingList:hover {
+    background-color: var(--server_bubble_color_lighter);
+}
+.attendingList[disabled]{
+background-color: inherit;
+}
+
+/*Only show remove icon when hover on div of attendee*/
+.attendingList:hover > .attendingListIcon{
+    display: inline;
+}
+
+.attendingList:hover > .attendingListIcon:disabled{
+    display:none;
+}

@@ -1,0 +1,137 @@
+
+/*Full Screen Mode Settings*/
+@media screen and (max-width: 800px) {
+    .rcw-conversation-container{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .rcw-input {
+        max-width: 100%;
+    }
+    .rcw-conversation-container .rcw-title {
+        padding: 0;
+    }
+    /*Server Output*/
+    .rcw-response .rcw-message-text{
+        max-width: 100%;
+    }
+    /*User input*/
+    .rcw-client .rcw-message-text{
+        max-width: 100%;
+    }
+}
+
+/*Pop Up Mode Settings */
+@media screen and (min-width: 800px) {
+    .rcw-conversation-container{
+        min-width: 370px;
+        max-width: 370px;
+    }
+    .closeIcon{
+        display: none;
+    }
+}
+
+/*Override chat window header*/
+.rcw-launcher{
+    background-color: var(--main_color);
+}
+.rcw-conversation-container .rcw-title{
+    background-color: var(--main_color);
+    border-radius: 5px;
+}
+
+.conversation-container .header, .conversation-container .header h4 {
+    padding-top: 0.5vh;
+    padding-bottom: 0.0vh;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin: 0;
+    background-color: var(--main_color);
+}
+.conversation-container .header {
+    border-bottom: 1px solid var(--half_main_bg_main );
+}
+
+#chatHeaderText p{
+    margin: 0;
+}
+#chatHeader{
+    display: 'flex';
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#chatHeaderText, #chatHeaderIcon{
+    display: inline-block;
+}
+#chatHeaderText{
+    float: left;
+}
+#chatHeaderIcon{
+    float: right;
+}
+ 
+
+.launcher {
+    background-color:var(--main_color);
+}
+
+.rcw-conversation-container .rcw-title, #chatHeader {
+    padding: 1%;
+    background-color: var(--main_color);
+}
+
+.rcw-conversation-container .rcw-header {
+    padding: 0;
+    color: var(--chat_header_font_color);
+}
+
+.rcw-messages-container{
+background-color: var(--message_container_bg_color);
+}
+
+/** AI/My response bubbles*/
+.rcw-response .rcw-message-text, .rcw-snippet{
+    background-color: var(--server_bubble_color);
+    max-width: 100%;
+}
+
+/** Guest responses*/
+.rcw-client .rcw-message-text {
+    background-color: var(--client_bubble_color);
+    color: white;
+}
+
+/*Override sender css to hide
+emoji button/picker */
+.rcw-sender{
+    justify-content: space-between;
+    padding-right: 0;
+    max-width: 100%;
+    background-color: var(--message_container_bg_color);
+}
+.rcw-input{
+    max-width: 100%;
+    overflow-x:scroll;
+    display:inline-block;
+}
+.rcw-picker-btn{
+    display: none;
+}
+.rcw-new-message{
+    max-width: 100%;
+    width: 100%;
+    max-height: 10rem;
+    background-color: var(--message_container_bg_color_darker);
+}
+
+.rcw-send{
+    background-color: var(--message_container_bg_color);
+}
+
+
+.my_submit{
+    border: black solid thin;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,17 @@
+.leaflet-container {
+    display: block;
+    width: 100%;
+    height: 35vh;
+  }
+
+.rcw-response-map-interface{
+    background-color: var(--server_bubble_color);
+    border-radius: 10px;
+    margin: 0;
+    padding: 15px;
+    width: 85%;
+}
+
+.rcw-response-map p{
+    margin: 0;
+}

@@ -1,0 +1,53 @@
+.openingButtons{
+    font-size: small;
+    width: 100%;
+    border: solid #6e9ecf33 1px;
+    border-radius: 5px;
+    padding-bottom: 0;
+    box-shadow: #959da533 0px 8px 24px;
+}
+
+.openingText{
+    background-color: var(--server_bubble_color);
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+
+.openingButtons::before{
+   content: "Something you can ask is: ";
+   font-size: smaller;
+   font-weight: bold;
+   color: #808088;
+   float:left;
+   padding-left: 1%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+}
+
+.openingButtons button{
+    color: black;
+    width: 100%;
+    text-align: left;
+}
+
+/*Transition Animation */
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  .alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .alert-exit {
+    opacity: 1;
+  }
+  .alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
+  

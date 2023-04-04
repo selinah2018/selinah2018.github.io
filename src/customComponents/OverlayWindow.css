@@ -1,0 +1,57 @@
+#overLayContainer{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    z-index: 10000;
+    animation: pulldown .75s;
+    transition: ease-in-out .75s;
+}
+
+/*Keyframe for loading overlay top to bottom in a pull down motion*/
+@keyframes pulldown {
+    0% { opacity: 0; transform: translateY(-100%); }
+    50% {opacity: 0;}
+    100% { opacity: 100%;transform: none; }
+}
+
+
+
+.overlay{
+    height: 100%;
+}
+
+.overlayHeader{
+    text-align: right;
+    height: 8%;
+    padding-right: 2%;
+    padding-top: 2%;
+}
+.overlayContent{
+    height: 100%;
+    text-align: center;
+}
+
+.loadDocument{
+    width: 90%;
+    height: 85%;
+    border: none;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.overlayExpandShrink{
+    display:contents
+}
+
+/* Hide compress/shrink button in full screen mode*/
+@media screen and (max-width: 800px) {
+    .overlayExpandShrink{
+        display: none;
+    }
+}

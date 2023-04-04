@@ -1,0 +1,19 @@
+.feedback {
+    background-color: var(--server_bubble_color);
+    border-radius: 10px;
+    margin: 0;
+    padding:15px;
+}
+
+.feedback p{
+    margin: 0;
+}
+
+.rcw-response-feedback{
+    width: 100%;
+}
+
+.feedback_textarea ::placeholder{
+    color: black;
+
+}
