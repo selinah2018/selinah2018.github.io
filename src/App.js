@@ -121,16 +121,16 @@ function App() {
       Welcome to Selina's Sandbox!
       </div>
       <div className="Page-Body">
-        <p>This page is where Selina likes to test out new ideas. 
-          Currently, she is experimenting with different ways of displaying chat messages in a chat window.
-        </p>
+        <p>This page is where Selina likes to test out new ideas. </p>
+        <p>Currently the page is under development.</p>
         <br></br>
         <p>
-          The chatbot does not show accurate information or perform entire actions. 
           It is only a proof of concept. 
         </p>
 
       </div>
+
+      {/*
       <div className='Chat'>      
         <Widget 
         handleNewUserMessage={handleNewUserMessage}
@@ -141,7 +141,9 @@ function App() {
         senderPlaceHolder = "Type a Question Here!"
         showTimeStamp={true}
         />
+  
       </div>
+      */}
 
     </div>
   );
